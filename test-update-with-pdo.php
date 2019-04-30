@@ -3,10 +3,10 @@
 //https://github.com/motanelu/php-thread/blob/master/Thread.php
 require_once( 'Thread.php' );
 
-/*$server='dbm1.qmobility.qualys.com:50827';
-$username = 'qmdc_prod';
-$password='kC8!DkuJkQbBmT#S+Nwn';
-$database='qmerdb';*/
+/*$server='dbm1.test.com:3306';
+$username = 'test_user';
+$password='testing';
+$database='test_db';*/
 
 
 
@@ -18,13 +18,13 @@ if( ! Thread::isAvailable() ) {
 // function to be ran on separate threads
 function paralel( $_limit, $_name ) {
     /*$server='localhost';
-    $username = 'qmemm_dev';
-    $password='Qmobility@123';
-    $database='qmerdb_dev_11';*/
+    $username = 'test_usre';
+    $password='test_pass';
+    $database='test_db';*/
 
     $server='localhost';
     $username = 'testuser';
-    $password='kC8!DkuJkQbBmT#S+Nwn';
+    $password='test_pass';
     $database='testdb';
     $dbh=array();
     for ( $index = 0; $index < $_limit; $index++ ) {
